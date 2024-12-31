@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug with J-Link",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/Debug/firmware.elf", // Change the executable path
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "APM32F407IG",
+            "interface": "swd",
+            "svdFile": "./svd/APM32F40x.svd",
+            "runToEntryPoint": "main",
+        },
+    ]
+}
+
